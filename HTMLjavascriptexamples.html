@@ -1,0 +1,78 @@
+<html>
+<body>
+
+<title>HTML/ JavaScript Examples</title>
+sdfgbsfgbfgb
+<hr>
+<strong>dfdfgdfggf</strong>
+sdfbsfggsf
+
+<br>
+
+<strong>
+dfdfgdfggf
+
+</strong>
+sdfbsfggsf
+
+<h1>
+sdfgsdfgdsfgdg
+</h1>
+
+<center>
+<h2>
+sgfhdtyjhsgdfjhg
+</h2>
+
+</center>
+
+<!--A simple button that changes some text-->
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+<p id="TextToChange">This is my starting text</p>
+
+<script>
+
+function myFunction() { 
+    document.getElementById("TextToChange").innerHTML = "This is the text after I pressed the button";
+}
+
+</script>
+
+<!--A button that counts-->
+
+<button type="button" onclick="CountingFunction()">I can count</button>
+<p id="Number">0</p>
+
+<script>
+var x=1;
+function CountingFunction() { 
+    document.getElementById("Number").innerHTML = x;
+x=x+1;
+}
+</script>
+
+<!--A button that counts and changes the output depending on the variable's value-->
+
+<button type="button" onclick="TalkCount()">I can count and talk</button>
+<p id="variable">0</p>
+<p id="Talk">0</p>
+
+
+<script>
+var y=1;
+function TalkCount() { 
+        document.getElementById("variable").innerHTML = y;
+	if (y==1) {document.getElementById("Talk").innerHTML = "hi";}
+	else if (y==2) {document.getElementById("Talk").innerHTML = "there";}
+	else if (y==3) {document.getElementById("Talk").innerHTML = "you";}
+	else if (y==4) {document.getElementById("Talk").innerHTML = "are";}
+	else if (y==5) {document.getElementById("Talk").innerHTML = "awesome";}
+	else {document.getElementById("Talk").innerHTML = y;}
+y=y+1;
+}
+
+</script>
+
+</body>
+</html>
